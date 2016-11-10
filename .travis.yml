@@ -19,18 +19,11 @@ env:
     - REPLICA_001_DATABASE_URL="postgres://postgres:@localhost/sharding_replica_001"
     - REPLICA_002_DATABASE_URL="postgres://postgres:@localhost/sharding_replica_002"
   matrix:
-    - TOX_ENV=py27-dj18
-    - TOX_ENV=py27-dj19
-    - TOX_ENV=py27-dj110
-    - TOX_ENV=py27-djdev
-    - TOX_ENV=py34-dj18
-    - TOX_ENV=py34-dj19
-    - TOX_ENV=py34-dj110
-    - TOX_ENV=py34-djdev
-    - TOX_ENV=py35-dj18
-    - TOX_ENV=py35-dj19
-    - TOX_ENV=py35-dj110
-    - TOX_ENV=py35-djdev
+    - TOX_ENV=py${TRAVIS_PYTHON_VERSION//./}-dj18
+    - TOX_ENV=py${TRAVIS_PYTHON_VERSION//./}-dj19
+    - TOX_ENV=py${TRAVIS_PYTHON_VERSION//./}-dj110
+    - TOX_ENV=py${TRAVIS_PYTHON_VERSION//./}-djdev
+
 matrix:
   fast_finish: true
   allow_failures:
