@@ -19,7 +19,7 @@ For information about how to setup sharding in your application, [read the docum
 
 ### Developer Experience
 
-I wrote this library after working on this problem for [Wave](https://www.waveapps.com) and not being able to find a library that suited our needs. What we were looking for was something that was powerful, extensible and customizable. This library was created for just that purpose and includes at least one implimentation of each part of the pipeline with room to replace any individual components.
+I wrote this library after working on this problem for [Wave](https://www.waveapps.com) and not being able to find a library that suited our needs. What we were looking for was something that was powerful, extensible and customizable. This library was created for just that purpose and includes at least one implementation of each part of the pipeline with room to replace any individual components.
 
 ### Influences
 
@@ -92,7 +92,7 @@ Run them as normal, for example:
 ./manage.py migrate <app> --database=<database_alias>
 ```
 
-### Acccessing sharded data
+### Accessing sharded data
 
 ```python
 # TODO: Update this with methods.
